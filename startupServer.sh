@@ -1,14 +1,10 @@
 sudo apt-get update -y
-sudo apt-get install python3-virtualenv -y
-sudo apt-get install python3-venv -y
 
 git clone https://github.com/BangAwal/fintax-intern-test.git
 cd fintax-intern-test/
 
-sudo python3 -m venv venv
-source venv/bin/activate
-pip install Flask 
-pip install gunicorn 
+pip3 install Flask 
+pip3 install gunicorn 
 
 sudo systemctl restart nginx
 
