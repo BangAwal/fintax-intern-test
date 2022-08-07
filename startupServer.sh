@@ -10,11 +10,6 @@ source venv/bin/activate
 pip install Flask 
 pip install gunicorn 
 
-sudo apt-get install nginx -y
-sudo systemctl start nginx
-sudo systemctl enable nginx
-
-sudo mv default /etc/nginx/sites-available/default
 sudo systemctl restart nginx
 
 sudo fuser -k 8000/tcp
