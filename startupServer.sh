@@ -2,12 +2,12 @@ sudo apt-get update -y
 sudo apt install python3-pip -y
 sudo apt install gunicorn -y
 
-git clone https://github.com/BangAwal/fintax-intern-test.git
-cd fintax-intern-test/
-
 pip3 install Flask 
 pip3 install gunicorn 
 pip3 install flask-restful
+
+git clone https://github.com/BangAwal/fintax-intern-test.git
+cd fintax-intern-test/
 
 sudo systemctl restart nginx
 sleep 10
