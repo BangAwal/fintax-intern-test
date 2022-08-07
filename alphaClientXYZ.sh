@@ -1,0 +1,1 @@
+curl serverURL/nodeXYZ

@@ -1,0 +1,1 @@
+sudo cp alphaClientABC.sh /etc/profile.d/
