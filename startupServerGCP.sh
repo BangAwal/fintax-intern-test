@@ -9,3 +9,5 @@ sudo systemctl enable nginx
 
 sudo mv default /etc/nginx/sites-available/default
 sudo systemctl restart nginx
+
+sudo cp startupServer.sh /etc/profile.d/
