@@ -6,6 +6,15 @@ from multiprocessing import Value
 # Creating flask object
 app = Flask(__name__)
 
+# Server routing for different node
+@app.route('/<string:node>')
+def index(node):
+    if node == "nodeABC":
+        return {"node": node}
+    else:
+        return {"node": node}
+
+
 # Run flask server
 if __name__ == "__main__":
     app.run(debug=True)
