@@ -9,6 +9,7 @@ Documentation:
 3. Attach startup script on it's metadata, so that will automatically started when boot the VM.
 4. For the alphaServer, there are two startup script (.sh). startupServerGCP.sh is use when creating the VM, and it will put startupServer.sh on /etc/profile.d/ directory, so that everytime it's ssh, it will shows the ssh metrics. The client server is use same mechanism too, script startupClientABC.sh or startupClientXYZ.sh is used when creating the VM.
 5. After the VM instance has been created, we have to ssh to alpha-server first, after that, we can ssh to client node, and we can see the metrics in alpha-server window.
+
 All process above can be done using this command in cloud shell:
 git clone https://github.com/BangAwal/fintax-intern-test.git
 cd fintax-intern-test/
